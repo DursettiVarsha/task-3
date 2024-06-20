@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Webpage</h1>
+    </header>
+    <main>
+        <section id="slider">
+            <div class="slides">
+                <div class="slide">Slide 1</div>
+                <div class="slide">Slide 2</div>
+                <div class="slide">Slide 3</div>
+            </div>
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+        </section>
+
+        <section id="accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">Section 1</h2>
+                <div class="accordion-content">Content 1</div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">Section 2</h2>
+                <div class="accordion-content">Content 2</div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">Section 3</h2>
+                <div class="accordion-content">Content 3</div>
+            </div>
+        </section>
+
+        <section id="tabs">
+            <ul class="tab-list">
+                <li class="tab-item" data-tab="1">Tab 1</li>
+                <li class="tab-item" data-tab="2">Tab 2</li>
+                <li class="tab-item" data-tab="3">Tab 3</li>
+            </ul>
+            <div class="tab-content" data-tab="1">Tab Content 1</div>
+            <div class="tab-content" data-tab="2">Tab Content 2</div>
+            <div class="tab-content" data-tab="3">Tab Content 3</div>
+        </section>
+
+        <section id="form">
+            <form id="userForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="data">
+            <button id="fetchData">Fetch Data</button>
+            <div id="dataDisplay"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
